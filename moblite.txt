@@ -1,0 +1,152 @@
+# diff all
+
+# version
+# Betaflight / STM32F411 (S411) 4.3.0 Feb 21 2021 / 15:46:46 (7cce28131) MSP API: 1.44
+# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: 56f796fb, date: 2019-10-26T09:47:21Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4FR
+manufacturer_id HAMO
+mcu_id 0042000f3030510939383634
+signature 
+
+# name: AlexeyStn
+
+# resources
+resource MOTOR 1 B08
+resource MOTOR 2 B07
+resource MOTOR 3 B06
+resource MOTOR 4 B10
+
+# feature
+feature -RX_PARALLEL_PWM
+
+# serial
+serial 0 128 115200 57600 0 1500000
+serial 1 2048 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1300 2100 0 0
+aux 1 1 1 900 1300 0 0
+aux 2 13 2 1900 2100 0 0
+aux 3 26 3 1700 2100 0 0
+aux 4 35 2 1150 1350 0 0
+
+# adjrange
+adjrange 0 0 1 900 1800 12 1 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
+vtxtable powerlevels 1
+vtxtable powerlabels 25
+
+# master
+set acc_calibration = -10,70,-100,1
+set rx_spi_protocol = FRSKY_D
+set blackbox_sample_rate = 1/1
+set dshot_idle_value = 1000
+set align_board_yaw = 180
+set vbat_max_cell_voltage = 440
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 330
+set ibata_scale = 1175
+set yaw_motors_reversed = ON
+set crashflip_motor_percent = 50
+set small_angle = 180
+set runaway_takeoff_prevention = OFF
+set osd_warn_batt_warning = OFF
+set osd_tim2 = 2577
+set osd_vbat_pos = 14730
+set osd_tim_2_pos = 14740
+set osd_throttle_pos = 14721
+set osd_vtx_channel_pos = 6145
+set osd_craft_name_pos = 14346
+set osd_debug_pos = 8545
+set osd_pit_ang_pos = 12407
+set osd_rol_ang_pos = 12375
+set osd_log_status_pos = 14363
+set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set osd_task_frequency = 300
+set debug_mode = GYRO_SCALED
+set vtx_band = 5
+set vtx_channel = 2
+set vtx_power = 1
+set vtx_low_power_disarm = ON
+set vtx_freq = 5695
+set vcd_video_system = NTSC
+set frsky_spi_tx_id = 228,161,0
+set frsky_spi_offset = -46
+set frsky_spi_bind_hop_data = 6,229,219,209,199,189,179,169,159,149,139,129,119,109,99,89,79,69,59,49,39,29,19,9,234,224,214,204,194,184,174,164,154,144,136,124,114,104,94,84,74,64,54,44,34,24,14,0,0,0
+set gyro_1_align_yaw = 900
+set name = AlexeyStn X
+
+profile 0
+
+# profile 0
+set p_pitch = 69
+set i_pitch = 135
+set d_pitch = 57
+set f_pitch = 143
+set p_roll = 63
+set i_roll = 128
+set d_roll = 53
+set f_roll = 135
+set p_yaw = 68
+set i_yaw = 135
+set f_yaw = 135
+set level_limit = 65
+set d_min_roll = 35
+set d_min_pitch = 38
+set simplified_pids_mode = RPY
+set simplified_master_multiplier = 150
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set yaw_rc_rate = 210
+set yaw_srate = 0
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 80
+
+rateprofile 1
+
+# rateprofile 1
+set roll_rc_rate = 60
+set pitch_rc_rate = 60
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
