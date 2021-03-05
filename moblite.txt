@@ -25,20 +25,22 @@ resource MOTOR 4 B10
 
 # feature
 feature -RX_PARALLEL_PWM
+feature LED_STRIP
 
 # serial
 serial 0 128 115200 57600 0 1500000
 serial 1 2048 115200 57600 0 115200
 
+# led
+led 0 0,0::CO:9
+
 # aux
 aux 0 0 0 1300 2100 0 0
-aux 1 1 1 900 1300 0 0
+aux 1 1 1 900 2100 0 0
 aux 2 13 2 1900 2100 0 0
-aux 3 26 3 1700 2100 0 0
-aux 4 35 2 1150 1350 0 0
-
-# adjrange
-adjrange 0 0 1 900 1800 12 1 0 0
+aux 3 19 1 1300 1700 0 0
+aux 4 26 3 1700 2100 0 0
+aux 5 35 2 1150 1350 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -132,10 +134,6 @@ set throttle_limit_type = SCALE
 set throttle_limit_percent = 80
 
 rateprofile 1
-
-# rateprofile 1
-set roll_rc_rate = 60
-set pitch_rc_rate = 60
 
 rateprofile 2
 
