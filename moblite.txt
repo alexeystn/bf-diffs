@@ -33,6 +33,7 @@ serial 1 2048 115200 57600 0 115200
 
 # led
 led 0 0,0::CO:9
+led 0 0,0::C:4
 
 # aux
 aux 0 0 0 1300 2100 0 0
@@ -68,6 +69,7 @@ set yaw_motors_reversed = ON
 set crashflip_motor_percent = 50
 set small_angle = 180
 set runaway_takeoff_prevention = OFF
+set ledstrip_profile = RACE
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
 set osd_vbat_pos = 14730
