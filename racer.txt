@@ -15,7 +15,7 @@ manufacturer_id FOXE
 mcu_id 0034001f3538510c35343631
 signature 
 
-# name: AlexeyStn R
+# name: AlexeyStn
 
 # feature
 feature -RX_PARALLEL_PWM
