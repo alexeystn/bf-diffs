@@ -61,7 +61,6 @@ vtxtable powerlabels 25
 # master
 set acc_calibration = -10,70,-100,1
 set rx_spi_protocol = FRSKY_D
-set blackbox_sample_rate = 1/1
 set dshot_idle_value = 1000
 set align_board_yaw = 180
 set vbat_max_cell_voltage = 440
