@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F7X2 (S7X2) 4.2.6 Jan 25 2021 / 21:31:59 (norevision) MSP API: 1.43
+# Betaflight / STM32F7X2 (S7X2) 4.2.9 May  4 2021 / 23:05:23 (norevision) MSP API: 1.43
 # config: manufacturer_id: FOXE, board_name: FOXEERF722V2, version: fa649d0b, date: 2020-03-24T07:10:19Z
 
 # start the command batch
@@ -73,6 +73,7 @@ vtxtable powerlabels 25 100 200 400 600
 
 # master
 set acc_calibration = 22,90,-277,1
+set rssi_channel = 7
 set serialrx_provider = CRSF
 set min_throttle = 1070
 set dshot_bidir = ON
@@ -84,7 +85,7 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
-set osd_rssi_pos = 8257
+set osd_rssi_pos = 12353
 set osd_link_quality_pos = 8289
 set osd_rssi_dbm_pos = 8225
 set osd_tim_2_pos = 12692
