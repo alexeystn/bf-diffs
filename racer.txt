@@ -73,7 +73,6 @@ vtxtable powerlabels 25 100 200 400 600
 
 # master
 set acc_calibration = 22,90,-277,1
-set rssi_channel = 7
 set serialrx_provider = CRSF
 set min_throttle = 1070
 set dshot_bidir = ON
@@ -85,7 +84,7 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
-set osd_rssi_pos = 12353
+set osd_rssi_pos = 8257
 set osd_link_quality_pos = 8289
 set osd_rssi_dbm_pos = 8225
 set osd_tim_2_pos = 12692
@@ -103,12 +102,14 @@ set osd_rol_ang_pos = 77
 set osd_flip_arrow_pos = 14575
 set osd_log_status_pos = 8281
 set osd_pid_profile_name_pos = 8556
+set osd_heart_rate_pos = 4161
 set osd_stat_rtc_date_time = ON
 set osd_stat_max_spd = OFF
 set osd_stat_max_g_force = ON
 set osd_stat_min_link_quality = ON
 set osd_stat_min_rssi_dbm = ON
 set osd_profile = 2
+set osd_heart_rate_channel = 7
 set debug_mode = GYRO_SCALED
 set vtx_band = 5
 set vtx_channel = 2
