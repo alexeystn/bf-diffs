@@ -121,17 +121,12 @@ set name = AlexeyStn R
 profile 0
 
 # profile 0
+set vbat_sag_compensation = 70
 set p_pitch = 32
-set i_pitch = 63
 set d_pitch = 27
-set f_pitch = 67
 set p_roll = 29
-set i_roll = 59
 set d_roll = 25
-set f_roll = 63
 set p_yaw = 31
-set i_yaw = 63
-set f_yaw = 63
 set d_min_roll = 16
 set d_min_pitch = 18
 
