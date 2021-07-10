@@ -20,6 +20,7 @@ signature
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
+feature GPS
 feature TELEMETRY
 feature LED_STRIP
 
@@ -28,6 +29,7 @@ beacon RX_SET
 
 # serial
 serial 1 64 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
 serial 4 8192 115200 57600 0 115200
 
 # led
@@ -82,6 +84,8 @@ set motor_pwm_rate = 480
 set ibata_scale = 180
 set yaw_motors_reversed = ON
 set small_angle = 180
+set gps_provider = UBLOX
+set gps_auto_baud = ON
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
 set osd_rssi_pos = 8257
@@ -94,6 +98,8 @@ set osd_vtx_channel_pos = 12289
 set osd_current_pos = 8576
 set osd_mah_drawn_pos = 8546
 set osd_craft_name_pos = 14346
+set osd_gps_speed_pos = 4152
+set osd_gps_sats_pos = 4129
 set osd_altitude_pos = 170
 set osd_warnings_pos = 14633
 set osd_avg_cell_voltage_pos = 14732
@@ -104,7 +110,6 @@ set osd_log_status_pos = 8281
 set osd_pid_profile_name_pos = 8556
 set osd_heart_rate_pos = 4481
 set osd_stat_rtc_date_time = ON
-set osd_stat_max_spd = OFF
 set osd_stat_max_g_force = ON
 set osd_stat_min_link_quality = ON
 set osd_stat_min_rssi_dbm = ON
@@ -116,12 +121,11 @@ set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
 set gyro_1_align_yaw = 2700
-set name = AlexeyStn R
+set name = AlexeyStn W
 
 profile 0
 
 # profile 0
-set vbat_sag_compensation = 100
 set p_pitch = 32
 set d_pitch = 27
 set p_roll = 29
