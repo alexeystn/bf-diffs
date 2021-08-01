@@ -44,6 +44,9 @@ led 9 13,0::AT:4
 led 10 14,0::AT:4
 led 11 15,0::AT:4
 
+# color
+color 4 60,0,160
+
 # mode_color
 mode_color 6 0 4
 mode_color 6 1 4
