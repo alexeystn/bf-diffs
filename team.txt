@@ -39,17 +39,21 @@ serial 1 64 115200 57600 0 115200
 led 0 15,0::C:4
 
 # color
-color 4 60,0,25
+color 4 45,0,50
 
 # aux
 aux 0 0 0 1700 2100 0 0
 
+# adjrange
+adjrange 0 0 3 900 2100 12 3 0 0
+
 # master
 set acc_calibration = 10,38,-274,1
 set serialrx_provider = CRSF
+set min_throttle = 1000
 set dshot_bidir = ON
-set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
+set motor_pwm_rate = 16000
 set yaw_motors_reversed = ON
 set small_angle = 180
 set gyro_1_sensor_align = CW90
@@ -71,14 +75,39 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
+set rates_type = ACTUAL
+set roll_rc_rate = 22
+set pitch_rc_rate = 22
+set yaw_rc_rate = 22
+set roll_expo = 12
+set pitch_expo = 12
+set yaw_expo = 12
+set roll_srate = 44
+set pitch_srate = 44
+set yaw_srate = 52
+set tpa_rate = 35
+set tpa_breakpoint = 1650
+
+rateprofile 1
+
+# rateprofile 1
+set roll_rc_rate = 201
+set pitch_rc_rate = 200
+set yaw_rc_rate = 140
+set roll_expo = 33
+set pitch_expo = 33
+set yaw_expo = 20
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
+
+rateprofile 2
+
+# rateprofile 2
 set roll_rc_rate = 60
 set pitch_rc_rate = 60
 set yaw_rc_rate = 60
 set yaw_srate = 55
-
-rateprofile 1
-
-rateprofile 2
 
 rateprofile 3
 
