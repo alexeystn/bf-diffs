@@ -17,16 +17,29 @@ signature
 
 # name: Overpass
 
+# resources
+resource MOTOR 1 C08
+resource MOTOR 2 C09
+resource MOTOR 3 A08
+resource MOTOR 4 A09
+
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
 feature TELEMETRY
+feature LED_STRIP
 
 # beacon
 beacon RX_SET
 
 # serial
 serial 1 64 115200 57600 0 115200
+
+# led
+led 0 15,0::C:4
+
+# color
+color 4 60,0,25
 
 # aux
 aux 0 0 0 1700 2100 0 0
@@ -35,10 +48,12 @@ aux 0 0 0 1700 2100 0 0
 set acc_calibration = 10,38,-274,1
 set serialrx_provider = CRSF
 set dshot_bidir = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
 set yaw_motors_reversed = ON
 set small_angle = 180
-set gyro_1_align_yaw = 2700
+set gyro_1_sensor_align = CW90
+set gyro_1_align_yaw = 900
 set name = Overpass
 
 profile 0
