@@ -22,6 +22,8 @@ resource MOTOR 1 C08
 resource MOTOR 2 C09
 resource MOTOR 3 A08
 resource MOTOR 4 A09
+resource ADC_RSSI 1 NONE
+resource PINIO 1 A00
 
 # feature
 feature -RX_PARALLEL_PWM
@@ -34,6 +36,7 @@ beacon RX_SET
 
 # serial
 serial 1 64 115200 57600 0 115200
+serial 4 1 115200 57600 0 115200
 
 # led
 led 0 15,0::C:4
@@ -43,6 +46,10 @@ color 4 45,0,50
 
 # aux
 aux 0 0 0 1700 2100 0 0
+aux 1 35 1 900 1300 0 0
+aux 2 45 2 1700 2100 0 0
+aux 3 40 1 1700 2100 0 0
+aux 4 40 0 900 900 0 45
 
 # adjrange
 adjrange 0 0 3 900 2100 12 3 0 0
@@ -50,12 +57,12 @@ adjrange 0 0 3 900 2100 12 3 0 0
 # master
 set acc_calibration = 10,38,-274,1
 set serialrx_provider = CRSF
-set min_throttle = 1000
 set dshot_bidir = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
-set motor_pwm_rate = 16000
 set yaw_motors_reversed = ON
 set small_angle = 180
+set pinio_box = 40,9,9,9
 set gyro_1_sensor_align = CW90
 set gyro_1_align_yaw = 900
 set name = Overpass
