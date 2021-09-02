@@ -31,18 +31,7 @@ serial 1 64 115200 57600 0 115200
 serial 4 8192 115200 57600 0 115200
 
 # led
-led 0 4,0::AT:0
-led 1 5,0::AT:4
-led 2 6,0::AT:4
-led 3 7,0::AT:4
-led 4 8,0::AT:4
-led 5 9,0::AT:4
-led 6 10,0::AT:4
-led 7 11,0::AT:4
-led 8 12,0::AT:4
-led 9 13,0::AT:4
-led 10 14,0::AT:4
-led 11 15,0::AT:4
+led 0 15,0::AT:4
 
 # color
 color 4 60,0,160
@@ -55,7 +44,7 @@ mode_color 7 0 7
 # aux
 aux 0 0 0 1800 2100 0 0
 aux 1 13 1 1300 1400 0 0
-aux 2 15 3 1950 2050 0 0
+aux 2 15 3 950 1050 0 0
 aux 3 26 1 1000 1100 0 0
 aux 4 35 1 1600 1700 0 0
 aux 5 39 1 1750 1850 0 0
@@ -115,7 +104,7 @@ set osd_stat_min_link_quality = ON
 set osd_stat_min_rssi_dbm = ON
 set osd_profile = 2
 set osd_heart_rate_channel = 7
-set debug_mode = GYRO_SCALED
+set debug_mode = RC_SMOOTHING_RATE
 set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
