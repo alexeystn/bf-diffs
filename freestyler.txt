@@ -1,18 +1,21 @@
 # diff all
 
 # version
-# EmuFlight / SYNERGYF4 (SYN4) 0.3.1 May 19 2020 / 04:45:29 (9366544) MSP API: 1.47
+# Betaflight / STM32F405 (S405) 4.2.9 May 18 2021 / 23:45:38 (253d7d1b5) MSP API: 1.43
+# config: manufacturer_id: KLEE, board_name: SYNERGYF4, version: 3bb9d2fc, date: 2019-10-19T23:41:38Z
 
-board_name 
-manufacturer_id 
-mcu_id 00270052344d500920383347
-signature 
+# start the command batch
+batch start
 
 # reset configuration to default settings
 defaults nosave
 
-# name
-name AlexeyStn F
+board_name SYNERGYF4
+manufacturer_id KLEE
+mcu_id 00270052344d500920383347
+signature 
+
+# name: AlexeyStn F
 
 # resources
 resource MOTOR 1 B01
@@ -20,41 +23,16 @@ resource MOTOR 2 A02
 resource MOTOR 3 B00
 resource MOTOR 4 A03
 
-# mixer
-
-# servo
-
-# servo mix
-
-
 # feature
 feature -RX_PARALLEL_PWM
 feature RX_SERIAL
-feature GPS
 feature TELEMETRY
 
-# beeper
-
-# beacon
-
-# map
-
-# serial
-serial 5 2 115200 9600 0 115200
-
 # led
-led 0 0,0::AT:6
-led 1 1,0::AT:0
-led 2 2,0::AT:0
-led 3 3,0::AT:0
-led 4 4,0::AT:0
-led 5 5,0::AT:0
-led 6 6,0::AT:0
-led 7 7,0::AT:0
-led 8 8,0::AT:0
-led 9 9,0::AT:0
+led 0 15,0::AT:4
 
 # color
+color 4 60,0,160
 
 # mode_color
 mode_color 6 0 4
@@ -64,85 +42,94 @@ mode_color 7 0 7
 # aux
 aux 0 0 0 1800 2100 0 0
 aux 1 13 1 1300 1400 0 0
-aux 2 15 3 1950 2050 0 0
+aux 2 15 3 950 1050 0 0
 aux 3 26 1 1000 1100 0 0
 aux 4 35 1 1600 1700 0 0
 aux 5 39 1 1750 1850 0 0
 
-# adjrange
-
-# rxrange
-
-# vtx
-
-# rxfail
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
+vtxtable powerlevels 3
+vtxtable powervalues 0 1 2
+vtxtable powerlabels 25 200 500
 
 # master
-set rssi_channel = 12
+set acc_calibration = -137,-42,463,1
 set serialrx_provider = CRSF
-set vbat_scale = 102
+set ibata_scale = 180
 set yaw_motors_reversed = ON
-set osd_warn_arming_disable = ON
-set osd_warn_batt_not_full = ON
+set small_angle = 180
 set osd_warn_batt_warning = OFF
-set osd_warn_batt_critical = ON
-set osd_warn_visual_beeper = ON
-set osd_warn_crash_flip = ON
-set osd_warn_esc_fail = ON
-set osd_warn_core_temp = ON
-set osd_rssi_pos = 2435
-set osd_tim_2_pos = 2453
-set osd_throttle_pos = 2104
-set osd_vtx_channel_pos = 2082
-set osd_mah_drawn_pos = 385
-set osd_craft_name_pos = 2090
-set osd_avg_cell_voltage_pos = 2444
+set osd_tim2 = 2577
+set osd_rssi_pos = 8257
+set osd_link_quality_pos = 8289
+set osd_rssi_dbm_pos = 8225
+set osd_tim_2_pos = 12692
+set osd_g_force_pos = 8569
+set osd_throttle_pos = 12313
+set osd_vtx_channel_pos = 12289
+set osd_current_pos = 8576
+set osd_mah_drawn_pos = 8546
+set osd_craft_name_pos = 14346
+set osd_altitude_pos = 170
+set osd_warnings_pos = 14633
+set osd_avg_cell_voltage_pos = 14732
+set osd_pit_ang_pos = 8248
+set osd_rol_ang_pos = 77
+set osd_flip_arrow_pos = 14575
+set osd_log_status_pos = 8281
+set osd_pid_profile_name_pos = 8556
+set osd_heart_rate_pos = 4481
+set osd_stat_rtc_date_time = ON
+set osd_stat_max_spd = OFF
+set osd_stat_max_g_force = ON
+set osd_stat_min_link_quality = ON
+set osd_stat_min_rssi_dbm = ON
+set osd_profile = 2
+set osd_heart_rate_channel = 7
 set vtx_band = 5
-set vtx_channel = 2
-set vtx_freq = 5695
+set vtx_channel = 3
+set vtx_power = 1
+set vtx_freq = 5732
+set gyro_1_align_pitch = 1800
+set name = AlexeyStn F
 
-# profile
 profile 0
 
+# profile 0
+set vbat_sag_compensation = 100
 
-# profile
 profile 1
 
-
-# profile
 profile 2
-
 
 # restore original profile selection
 profile 0
 
-# rateprofile
 rateprofile 0
 
+# rateprofile 0
 set roll_rc_rate = 60
 set pitch_rc_rate = 60
 set yaw_rc_rate = 60
 set yaw_srate = 55
 
-# rateprofile
 rateprofile 1
 
-
-# rateprofile
 rateprofile 2
 
-
-# rateprofile
 rateprofile 3
 
-
-# rateprofile
 rateprofile 4
 
-
-# rateprofile
 rateprofile 5
-
 
 # restore original rateprofile selection
 rateprofile 0
