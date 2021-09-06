@@ -98,9 +98,9 @@ set vtx_power = 1
 set vtx_low_power_disarm = ON
 set vtx_freq = 5695
 set vcd_video_system = NTSC
-set frsky_spi_tx_id = 228,161,0
-set frsky_spi_offset = -46
-set frsky_spi_bind_hop_data = 6,229,219,209,199,189,179,169,159,149,139,129,119,109,99,89,79,69,59,49,39,29,19,9,234,224,214,204,194,184,174,164,154,144,136,124,114,104,94,84,74,64,54,44,34,24,14,0,0,0
+set frsky_spi_tx_id = 121,50
+set frsky_spi_offset = -37
+set frsky_spi_bind_hop_data = 0,30,60,91,120,150,180,210,5,35,65,95,125,155,185,215,10,40,70,100,130,160,190,221,15,45,75,105,135,165,195,225,20,50,80,110,140,170,200,230,25,55,85,115,145,175,205,8,79,0
 set gyro_1_align_yaw = 900
 set name = AlexeyStn X
 
