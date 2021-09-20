@@ -42,7 +42,7 @@ mode_color 7 0 7
 # aux
 aux 0 0 0 1800 2100 0 0
 aux 1 13 1 1300 1400 0 0
-aux 2 15 3 950 1050 0 0
+aux 2 15 3 1950 2050 0 0
 aux 3 26 1 1000 1100 0 0
 aux 4 35 1 1600 1700 0 0
 aux 5 39 1 1750 1850 0 0
@@ -63,6 +63,8 @@ vtxtable powerlabels 25 200 500
 # master
 set acc_calibration = -137,-42,463,1
 set serialrx_provider = CRSF
+set motor_pwm_protocol = DSHOT300
+set vbat_scale = 101
 set ibata_scale = 180
 set yaw_motors_reversed = ON
 set small_angle = 180
