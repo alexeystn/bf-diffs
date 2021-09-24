@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.0 Feb 21 2021 / 15:46:46 (7cce28131) MSP API: 1.44
-# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: 56f796fb, date: 2019-10-26T09:47:21Z
+# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
 
 # start the command batch
 batch start
@@ -36,15 +36,16 @@ serial 1 2048 115200 57600 0 115200
 led 0 0,0::C:4
 
 # aux
-aux 0 0 0 1300 2100 0 0
-aux 1 1 2 1300 1700 0 0
-aux 2 13 1 1900 2100 0 0
-aux 3 19 1 900 1100 0 0
-aux 4 26 1 1650 1850 0 0
-aux 5 35 1 1150 1350 0 0
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 13 5 1700 2100 0 0
+aux 3 19 6 1700 2100 0 0
+aux 4 26 4 1700 2100 0 0
+aux 5 35 2 1700 2100 0 0
+aux 6 49 7 1700 2100 0 0
 
 # adjrange
-adjrange 0 0 2 900 2100 12 2 0 0
+adjrange 0 0 0 900 950 12 0 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -60,7 +61,7 @@ vtxtable powerlabels 25
 
 # master
 set acc_calibration = -10,70,-100,1
-set rx_spi_protocol = FRSKY_D
+set rx_spi_protocol = REDPINE
 set dshot_idle_value = 1000
 set align_board_yaw = 180
 set vbat_max_cell_voltage = 440
@@ -77,20 +78,19 @@ set osd_tim2 = 2577
 set osd_vbat_pos = 14730
 set osd_rssi_pos = 12634
 set osd_tim_2_pos = 14740
-set osd_flymode_pos = 14362
+set osd_flymode_pos = 14361
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14337
 set osd_craft_name_pos = 14346
 set osd_debug_pos = 8545
 set osd_pit_ang_pos = 12407
 set osd_rol_ang_pos = 12375
-set osd_log_status_pos = 14395
+set osd_log_status_pos = 14394
 set osd_stat_max_spd = OFF
 set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set osd_task_frequency = 300
 set debug_mode = GYRO_SCALED
 set vtx_band = 5
 set vtx_channel = 2
@@ -98,52 +98,27 @@ set vtx_power = 1
 set vtx_low_power_disarm = ON
 set vtx_freq = 5695
 set vcd_video_system = NTSC
-set frsky_spi_tx_id = 121,50
-set frsky_spi_offset = -37
-set frsky_spi_bind_hop_data = 0,30,60,91,120,150,180,210,5,35,65,95,125,155,185,215,10,40,70,100,130,160,190,221,15,45,75,105,135,165,195,225,20,50,80,110,140,170,200,230,25,55,85,115,145,175,205,8,79,0
+set frsky_spi_tx_id = 50,121
+set frsky_spi_offset = 30
+set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
 set gyro_1_align_yaw = 900
 set name = AlexeyStn X
 
 profile 0
 
 # profile 0
+set vbat_sag_compensation = 100
 set crash_recovery = ON
 set p_pitch = 69
-set i_pitch = 135
 set d_pitch = 57
-set f_pitch = 143
 set p_roll = 63
-set i_roll = 128
 set d_roll = 53
-set f_roll = 135
 set p_yaw = 68
-set i_yaw = 135
-set f_yaw = 135
 set level_limit = 70
 set d_min_roll = 35
 set d_min_pitch = 38
-set simplified_pids_mode = RPY
-set simplified_master_multiplier = 150
 
 profile 1
-
-# profile 1
-set p_pitch = 69
-set i_pitch = 135
-set d_pitch = 57
-set f_pitch = 143
-set p_roll = 63
-set i_roll = 128
-set d_roll = 53
-set f_roll = 135
-set p_yaw = 68
-set i_yaw = 135
-set f_yaw = 135
-set level_limit = 70
-set d_min_roll = 35
-set d_min_pitch = 38
-set simplified_pids_mode = RPY
-set simplified_master_multiplier = 150
 
 profile 2
 
@@ -160,11 +135,11 @@ set yaw_srate = 60
 
 rateprofile 1
 
-# rateprofile 1
+rateprofile 2
+
+# rateprofile 2
 set yaw_rc_rate = 210
 set yaw_srate = 0
-
-rateprofile 2
 
 rateprofile 3
 
