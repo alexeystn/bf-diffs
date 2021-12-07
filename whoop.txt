@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+# Betaflight / STM32F411 (S411) 4.3.0 Dec  7 2021 / 22:23:53 (300ee1bde) MSP API: 1.44
 # config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
 
 # start the command batch
@@ -12,7 +12,7 @@ defaults nosave
 
 board_name CRAZYBEEF4FR
 manufacturer_id HAMO
-mcu_id 0042000f3030510939383634
+mcu_id 003f003f4e56500320363955
 signature 
 
 # name: AlexeyStn
@@ -37,15 +37,12 @@ led 0 0,0::C:4
 
 # aux
 aux 0 0 0 1700 2100 0 0
-aux 1 1 1 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
 aux 2 13 5 1700 2100 0 0
-aux 3 19 6 1700 2100 0 0
-aux 4 26 4 1700 2100 0 0
-aux 5 35 2 1700 2100 0 0
-aux 6 49 7 1700 2100 0 0
-
-# adjrange
-adjrange 0 0 1 900 2100 12 1 0 0
+aux 3 15 6 1700 2100 0 0
+aux 4 19 1 1700 2100 0 0
+aux 5 26 4 1700 2100 0 0
+aux 6 35 2 1700 2100 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -62,6 +59,7 @@ vtxtable powerlabels 25
 # master
 set acc_calibration = -10,70,-100,1
 set rx_spi_protocol = REDPINE
+set blackbox_sample_rate = 1/8
 set dshot_idle_value = 1000
 set align_board_yaw = 180
 set vbat_max_cell_voltage = 440
@@ -76,15 +74,15 @@ set ledstrip_profile = RACE
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
 set osd_vbat_pos = 14730
-set osd_rssi_pos = 12634
+set osd_rssi_pos = 14362
 set osd_tim_2_pos = 14740
-set osd_flymode_pos = 14361
+set osd_flymode_pos = 25
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14337
 set osd_craft_name_pos = 14346
 set osd_debug_pos = 8545
-set osd_pit_ang_pos = 12407
-set osd_rol_ang_pos = 12375
+set osd_pit_ang_pos = 8311
+set osd_rol_ang_pos = 8279
 set osd_log_status_pos = 14394
 set osd_stat_max_spd = OFF
 set osd_stat_battery = ON
@@ -98,7 +96,7 @@ set vtx_power = 1
 set vtx_low_power_disarm = ON
 set vtx_freq = 5695
 set vcd_video_system = NTSC
-set frsky_spi_tx_id = 50,121
+set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
 set gyro_1_align_yaw = 900
@@ -108,15 +106,21 @@ profile 0
 
 # profile 0
 set vbat_sag_compensation = 100
-set crash_recovery = ON
-set p_pitch = 69
-set d_pitch = 57
-set p_roll = 63
-set d_roll = 53
-set p_yaw = 68
-set level_limit = 70
-set d_min_roll = 35
-set d_min_pitch = 38
+set p_pitch = 70
+set i_pitch = 125
+set d_pitch = 69
+set f_pitch = 188
+set p_roll = 67
+set i_roll = 120
+set d_roll = 60
+set f_roll = 180
+set p_yaw = 67
+set i_yaw = 120
+set f_yaw = 180
+set level_limit = 65
+set d_min_roll = 45
+set d_min_pitch = 51
+set simplified_master_multiplier = 150
 
 profile 1
 
@@ -128,18 +132,12 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set roll_rc_rate = 45
-set pitch_rc_rate = 60
-set yaw_rc_rate = 205
-set yaw_srate = 0
+set yaw_rc_rate = 25
+set yaw_srate = 40
 
 rateprofile 1
 
 rateprofile 2
-
-# rateprofile 2
-set yaw_rc_rate = 210
-set yaw_srate = 0
 
 rateprofile 3
 
