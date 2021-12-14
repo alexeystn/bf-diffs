@@ -132,8 +132,8 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set yaw_rc_rate = 25
-set yaw_srate = 40
+set yaw_rc_rate = 45
+set yaw_srate = 60
 
 rateprofile 1
 
