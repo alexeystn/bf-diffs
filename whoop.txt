@@ -57,10 +57,14 @@ vtxtable powerlevels 1
 vtxtable powerlabels 25
 
 # master
+set gyro_lpf1_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
 set acc_calibration = -10,70,-100,1
 set rx_spi_protocol = REDPINE
 set blackbox_sample_rate = 1/8
-set dshot_idle_value = 1000
+set dshot_bidir = ON
+set motor_poles = 12
 set align_board_yaw = 180
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 290
@@ -105,6 +109,7 @@ set name = AlexeyStn R
 profile 0
 
 # profile 0
+set dterm_lpf1_static_hz = 0
 set vbat_sag_compensation = 100
 set p_pitch = 70
 set i_pitch = 125
@@ -117,6 +122,7 @@ set f_roll = 180
 set p_yaw = 67
 set i_yaw = 120
 set f_yaw = 180
+set angle_level_strength = 75
 set level_limit = 65
 set d_min_roll = 45
 set d_min_pitch = 51
@@ -132,8 +138,8 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set yaw_rc_rate = 45
-set yaw_srate = 60
+set yaw_rc_rate = 50
+set yaw_srate = 50
 
 rateprofile 1
 
