@@ -64,6 +64,7 @@ set acc_calibration = -10,70,-100,1
 set rx_spi_protocol = REDPINE
 set blackbox_sample_rate = 1/8
 set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set align_board_yaw = 180
 set vbat_max_cell_voltage = 440
@@ -93,7 +94,7 @@ set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-set debug_mode = GYRO_SCALED
+set debug_mode = DSHOT_RPM_TELEMETRY
 set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
@@ -126,6 +127,7 @@ set angle_level_strength = 75
 set level_limit = 65
 set d_min_roll = 45
 set d_min_pitch = 51
+set thrust_linear = 25
 set simplified_master_multiplier = 150
 
 profile 1
