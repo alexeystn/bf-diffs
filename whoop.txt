@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.2.11 Nov  9 2021 / 20:28:23 (948ba6339) MSP API: 1.43
+# Betaflight / STM32F411 (S411) 4.3.0 Jan 27 2022 / 12:10:25 (b6bc232a1) MSP API: 1.44
 # config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
 
 # start the command batch
@@ -59,6 +59,7 @@ vtxtable powerlabels 25
 # master
 set acc_calibration = -10,70,-100,1
 set rx_spi_protocol = REDPINE
+set dshot_idle_value = 1000
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
@@ -97,7 +98,7 @@ set vtx_power = 1
 set vtx_low_power_disarm = ON
 set vtx_freq = 5695
 set vcd_video_system = NTSC
-set frsky_spi_tx_id = 50,121
+set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
 set gyro_1_align_yaw = 900
@@ -107,21 +108,22 @@ profile 0
 
 # profile 0
 set vbat_sag_compensation = 100
-set p_pitch = 69
-set i_pitch = 135
-set d_pitch = 57
-set f_pitch = 143
-set p_roll = 63
-set i_roll = 128
-set d_roll = 53
-set f_roll = 135
-set p_yaw = 68
-set i_yaw = 135
-set f_yaw = 135
+set p_pitch = 70
+set i_pitch = 126
+set d_pitch = 69
+set f_pitch = 187
+set p_roll = 67
+set i_roll = 120
+set d_roll = 60
+set f_roll = 180
+set p_yaw = 67
+set i_yaw = 120
+set f_yaw = 180
 set angle_level_strength = 75
 set level_limit = 65
-set d_min_roll = 35
-set d_min_pitch = 38
+set d_min_roll = 45
+set d_min_pitch = 51
+set simplified_master_multiplier = 150
 
 profile 1
 
@@ -133,7 +135,6 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rates_type = ACTUAL
 set yaw_rc_rate = 60
 set yaw_srate = 60
 
