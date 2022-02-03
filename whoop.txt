@@ -58,6 +58,8 @@ vtxtable powerlabels 25
 
 # master
 set acc_calibration = -10,70,-100,1
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
 set rx_spi_protocol = REDPINE
 set dshot_idle_value = 1000
 set dshot_bidir = ON
@@ -123,6 +125,7 @@ set angle_level_strength = 75
 set level_limit = 65
 set d_min_roll = 45
 set d_min_pitch = 51
+set feedforward_averaging = 2_POINT
 set simplified_master_multiplier = 150
 
 profile 1
