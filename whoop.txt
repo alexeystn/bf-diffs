@@ -22,6 +22,8 @@ resource MOTOR 1 B08
 resource MOTOR 2 B07
 resource MOTOR 3 B06
 resource MOTOR 4 B10
+resource SERIAL_RX 2 NONE
+resource PINIO 1 A03
 
 # feature
 feature -RX_PARALLEL_PWM
