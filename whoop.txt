@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.0 Jan 27 2022 / 12:10:25 (b6bc232a1) MSP API: 1.44
+# Betaflight / STM32F411 (S411) 4.3.0-S Feb  9 2022 / 22:18:02 (efb597cd8) MSP API: 1.44
 # config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
 
 # start the command batch
@@ -86,7 +86,7 @@ set osd_tim_2_pos = 14740
 set osd_flymode_pos = 25
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14337
-set osd_craft_name_pos = 14346
+set osd_craft_name_pos = 14347
 set osd_debug_pos = 8545
 set osd_pit_ang_pos = 8311
 set osd_rol_ang_pos = 8279
@@ -107,7 +107,7 @@ set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
 set gyro_1_align_yaw = 900
-set name = AlexeyStn X
+set name = AlexeyStn
 
 profile 0
 
