@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.0-S Feb  9 2022 / 22:18:02 (efb597cd8) MSP API: 1.44
+# Betaflight / STM32F411 (S411) 4.3.0-S Feb 12 2022 / 14:07:50 (705c7e190) MSP API: 1.44
 # config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: a074838b, date: 2021-06-14T21:36:54Z
 
 # start the command batch
@@ -57,6 +57,11 @@ vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
 vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
 vtxtable powerlevels 1
 vtxtable powerlabels 25
+
+# unique_id
+uid 0 0047000e3030510939383634 B
+uid 1 003f003f4e56500320363955 R
+uid 2 002e00204e56500420363955 Y
 
 # master
 set acc_calibration = -10,70,-100,1
