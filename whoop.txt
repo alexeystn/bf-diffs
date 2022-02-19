@@ -101,6 +101,7 @@ set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
+set osd_stat_total_flights = ON
 set debug_mode = RECOVERY
 set vtx_band = 5
 set vtx_channel = 2
@@ -112,6 +113,7 @@ set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
 set gyro_1_align_yaw = 900
+set stats_min_armed_time_s = 45
 set name = AlexeyStn
 
 profile 0
