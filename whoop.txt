@@ -39,12 +39,12 @@ led 0 0,0::C:4
 
 # aux
 aux 0 0 0 1700 2100 0 0
-aux 1 1 1 900 2100 0 0
-aux 2 13 5 1700 2100 0 0
+aux 1 1 0 900 2100 0 0
+aux 2 13 3 1700 2100 0 0
 aux 3 15 6 1700 2100 0 0
-aux 4 19 1 1700 2100 0 0
-aux 5 26 4 1700 2100 0 0
-aux 6 35 2 1700 2100 0 0
+aux 4 19 7 1700 2100 0 0
+aux 5 26 2 1700 2100 0 0
+aux 6 35 1 1700 2100 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -86,22 +86,25 @@ set ledstrip_profile = RACE
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
 set osd_vbat_pos = 14730
-set osd_rssi_pos = 14362
+set osd_rssi_pos = 33
+set osd_rssi_dbm_pos = 12321
 set osd_tim_2_pos = 14740
 set osd_flymode_pos = 25
-set osd_throttle_pos = 14721
+set osd_throttle_pos = 14361
 set osd_vtx_channel_pos = 14337
 set osd_craft_name_pos = 14347
 set osd_debug_pos = 8545
 set osd_pit_ang_pos = 8311
 set osd_rol_ang_pos = 8279
 set osd_log_status_pos = 14394
+set osd_heart_rate_pos = 14721
 set osd_stat_max_spd = OFF
 set osd_stat_battery = ON
 set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set osd_stat_total_flights = ON
+set osd_heart_rate_channel = 9
 set debug_mode = RECOVERY
 set vtx_band = 5
 set vtx_channel = 2
@@ -112,6 +115,7 @@ set vcd_video_system = NTSC
 set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
+set redpine_high_res = ON
 set gyro_1_align_yaw = 900
 set stats_min_armed_time_s = 45
 set name = AlexeyStn
