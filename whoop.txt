@@ -104,6 +104,7 @@ set osd_stat_min_rssi = OFF
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
 set osd_stat_total_flights = ON
+set osd_framerate_hz = 60
 set osd_heart_rate_channel = 9
 set debug_mode = RECOVERY
 set vtx_band = 5
