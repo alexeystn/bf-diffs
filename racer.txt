@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F7X2 (S7X2) 4.2.9 May  4 2021 / 23:05:23 (norevision) MSP API: 1.43
-# config: manufacturer_id: FOXE, board_name: FOXEERF722V2, version: fa649d0b, date: 2020-03-24T07:10:19Z
+# Betaflight / STM32F7X2 (S7X2) 4.3.0-STN Apr 17 2022 / 11:22:25 (8d70a9562) MSP API: 1.44
+# config: manufacturer_id: FOXE, board_name: FOXEERF722V2, version: baa1d34a, date: 2021-08-16T07:35:36Z
 
 # start the command batch
 batch start
@@ -23,23 +23,30 @@ feature RX_SERIAL
 feature TELEMETRY
 feature LED_STRIP
 
-# beacon
-beacon RX_SET
-
 # serial
 serial 1 64 115200 57600 0 115200
 serial 4 8192 115200 57600 0 115200
 
+# beacon
+beacon RX_SET
+
 # led
-led 0 15,0::AT:4
+led 0 0,0::C:2
 
 # color
-color 4 60,0,160
-
-# mode_color
-mode_color 6 0 4
-mode_color 6 1 4
-mode_color 7 0 7
+color 1 0,255,80
+color 2 0,0,240
+color 3 30,0,180
+color 4 60,0,120
+color 5 90,0,180
+color 6 120,0,240
+color 7 150,0,180
+color 8 180,0,120
+color 9 210,0,180
+color 10 240,0,240
+color 11 270,0,180
+color 12 300,0,120
+color 13 330,0,180
 
 # aux
 aux 0 0 0 1800 2100 0 0
@@ -65,8 +72,16 @@ vtxtable powerlevels 5
 vtxtable powervalues 25 100 200 400 600
 vtxtable powerlabels 25 100 200 400 600
 
+# unique_id
+uid 0 0023002f3438510831353632 R
+uid 1 002c00303538510e34393631 B
+uid 2 0051003a3538510835343631 Y
+uid 3 003b001b3538510e34393631 W
+
 # master
-set acc_calibration = 22,90,-277,1
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 25,50,-250,1
 set serialrx_provider = CRSF
 set min_throttle = 1070
 set dshot_bidir = ON
@@ -110,19 +125,12 @@ set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
 set gyro_1_align_yaw = 2700
-set name = AlexeyStn R
+set name = AlexeyStn
 
 profile 0
 
 # profile 0
 set vbat_sag_compensation = 100
-set p_pitch = 32
-set d_pitch = 27
-set p_roll = 29
-set d_roll = 25
-set p_yaw = 31
-set d_min_roll = 16
-set d_min_pitch = 18
 
 profile 1
 
@@ -134,10 +142,15 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set roll_rc_rate = 60
-set pitch_rc_rate = 60
-set yaw_rc_rate = 60
-set yaw_srate = 55
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 12
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 50
+set roll_srate = 40
+set pitch_srate = 40
+set yaw_srate = 30
 
 rateprofile 1
 
