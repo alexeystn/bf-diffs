@@ -34,7 +34,7 @@ beacon RX_SET
 led 0 0,0::C:2
 
 # color
-color 1 30,100,110
+color 1 30,100,120
 color 2 0,0,240
 color 3 10,0,220
 color 4 30,0,180
