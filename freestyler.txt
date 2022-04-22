@@ -29,15 +29,26 @@ feature RX_SERIAL
 feature TELEMETRY
 
 # led
-led 0 15,0::AT:4
+led 0 0,0::C:2
 
 # color
-color 4 60,0,160
+color 1 30,100,120
+color 2 0,0,240
+color 3 10,0,220
+color 4 30,0,180
+color 5 90,0,180
+color 6 120,0,240
+color 7 150,0,180
+color 8 180,0,120
+color 9 210,0,180
+color 10 240,0,240
+color 11 270,0,180
+color 12 300,0,120
+color 13 330,0,180
 
 # mode_color
 mode_color 6 0 4
 mode_color 6 1 4
-mode_color 7 0 7
 
 # aux
 aux 0 0 0 1800 2100 0 0
