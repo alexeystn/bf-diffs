@@ -84,6 +84,7 @@ set dyn_notch_q = 500
 set acc_calibration = 25,50,-250,1
 set serialrx_provider = CRSF
 set dshot_bidir = ON
+set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
 set ibata_scale = 180
 set yaw_motors_reversed = ON
@@ -211,6 +212,8 @@ set yaw_expo = 50
 set roll_srate = 40
 set pitch_srate = 40
 set yaw_srate = 30
+
+rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 4
