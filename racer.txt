@@ -59,6 +59,9 @@ aux 6 39 0 900 900 0 45
 aux 7 45 2 1900 2100 0 0
 aux 8 49 2 1150 1350 0 0
 
+# adjrange
+adjrange 0 0 3 1900 2100 29 3 0 0
+
 # vtxtable
 vtxtable bands 6
 vtxtable channels 8
@@ -91,26 +94,27 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
-set osd_rssi_pos = 8257
-set osd_link_quality_pos = 8289
-set osd_rssi_dbm_pos = 8225
-set osd_tim_2_pos = 12692
-set osd_g_force_pos = 8569
-set osd_throttle_pos = 12313
-set osd_vtx_channel_pos = 12289
-set osd_current_pos = 8576
-set osd_mah_drawn_pos = 8546
-set osd_craft_name_pos = 14346
+set osd_rssi_pos = 4161
+set osd_link_quality_pos = 4193
+set osd_rssi_dbm_pos = 4129
+set osd_tim_2_pos = 14740
+set osd_g_force_pos = 4473
+set osd_throttle_pos = 14361
+set osd_vtx_channel_pos = 14337
+set osd_current_pos = 4480
+set osd_mah_drawn_pos = 4450
+set osd_craft_name_pos = 6154
+set osd_display_name_pos = 8202
 set osd_altitude_pos = 170
 set osd_warnings_pos = 14633
 set osd_avg_cell_voltage_pos = 14732
-set osd_pit_ang_pos = 8248
+set osd_pit_ang_pos = 4152
 set osd_rol_ang_pos = 77
 set osd_flip_arrow_pos = 14575
-set osd_log_status_pos = 8281
-set osd_rate_profile_name_pos = 12679
-set osd_pid_profile_name_pos = 8556
-set osd_heart_rate_pos = 4481
+set osd_log_status_pos = 4185
+set osd_rate_profile_name_pos = 8577
+set osd_pid_profile_name_pos = 4460
+set osd_heart_rate_pos = 2433
 set osd_stat_rtc_date_time = ON
 set osd_stat_max_spd = OFF
 set osd_stat_max_g_force = ON
@@ -118,7 +122,10 @@ set osd_stat_min_link_quality = ON
 set osd_stat_total_flights = ON
 set osd_stat_total_time = ON
 set osd_stat_min_rssi_dbm = ON
-set osd_profile = 2
+set osd_profile = 1
+set osd_profile_1_name = personal
+set osd_profile_2_name = debug
+set osd_profile_3_name = team
 set osd_framerate_hz = 60
 set debug_mode = RC_SMOOTHING_RATE
 set vtx_band = 5
@@ -128,6 +135,7 @@ set vtx_freq = 5695
 set gyro_1_align_yaw = 2700
 set stats_min_armed_time_s = 30
 set name = AlexeyStn
+set display_name = overpass-st
 
 profile 0
 
