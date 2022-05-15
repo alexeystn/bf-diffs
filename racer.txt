@@ -122,7 +122,6 @@ set osd_stat_min_link_quality = ON
 set osd_stat_total_flights = ON
 set osd_stat_total_time = ON
 set osd_stat_min_rssi_dbm = ON
-set osd_profile = 1
 set osd_profile_1_name = personal
 set osd_profile_2_name = debug
 set osd_profile_3_name = team
