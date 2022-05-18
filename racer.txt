@@ -15,7 +15,7 @@ manufacturer_id FOXE
 mcu_id 0034001f3538510c35343631
 signature 
 
-# name: AlexeyStn
+# name: S
 
 # feature
 feature -RX_PARALLEL_PWM
@@ -86,35 +86,37 @@ set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = 25,50,-250,1
 set serialrx_provider = CRSF
+set min_throttle = 1000
 set dshot_bidir = ON
-set use_unsynced_pwm = OFF
 set motor_pwm_protocol = DSHOT600
+set motor_pwm_rate = 16000
 set ibata_scale = 180
 set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_batt_warning = OFF
 set osd_tim2 = 2577
 set osd_rssi_pos = 4161
-set osd_link_quality_pos = 4193
+set osd_link_quality_pos = 4097
 set osd_rssi_dbm_pos = 4129
 set osd_tim_2_pos = 14740
-set osd_g_force_pos = 4473
-set osd_throttle_pos = 14361
-set osd_vtx_channel_pos = 14337
-set osd_current_pos = 4480
-set osd_mah_drawn_pos = 4450
-set osd_craft_name_pos = 6529
-set osd_display_name_pos = 8577
+set osd_g_force_pos = 4185
+set osd_throttle_pos = 14713
+set osd_vtx_channel_pos = 14721
+set osd_current_pos = 4118
+set osd_mah_drawn_pos = 4152
+set osd_craft_name_pos = 8538
+set osd_display_name_pos = 6154
 set osd_altitude_pos = 170
-set osd_warnings_pos = 14634
-set osd_avg_cell_voltage_pos = 14669
-set osd_pit_ang_pos = 4152
+set osd_warnings_pos = 14601
+set osd_avg_cell_voltage_pos = 14668
+set osd_pit_ang_pos = 56
 set osd_rol_ang_pos = 77
 set osd_flip_arrow_pos = 14575
-set osd_log_status_pos = 4185
+set osd_log_status_pos = 4193
 set osd_rate_profile_name_pos = 10593
-set osd_pid_profile_name_pos = 4460
-set osd_heart_rate_pos = 2062
+set osd_pid_profile_name_pos = 364
+set osd_profile_name_pos = 8203
+set osd_heart_rate_pos = 2444
 set osd_stat_rtc_date_time = ON
 set osd_stat_max_spd = OFF
 set osd_stat_max_g_force = ON
@@ -124,7 +126,7 @@ set osd_stat_total_time = ON
 set osd_stat_min_rssi_dbm = ON
 set osd_profile_1_name = personal
 set osd_profile_2_name = debug
-set osd_profile_3_name = team
+set osd_profile_3_name = overpass
 set osd_framerate_hz = 60
 set debug_mode = RC_SMOOTHING_RATE
 set vtx_band = 5
@@ -133,8 +135,8 @@ set vtx_power = 1
 set vtx_freq = 5695
 set gyro_1_align_yaw = 2700
 set stats_min_armed_time_s = 30
-set name = AlexeyStn
-set display_name = overpass-st
+set name = S
+set display_name = AlexeyStn
 
 profile 0
 
@@ -165,7 +167,7 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = EUGY 01
+set rateprofile_name = EU
 set roll_rc_rate = 23
 set pitch_rc_rate = 23
 set yaw_rc_rate = 23
@@ -181,7 +183,7 @@ set tpa_breakpoint = 1650
 rateprofile 1
 
 # rateprofile 1
-set rateprofile_name = NATAHOVA
+set rateprofile_name = NA
 set roll_rc_rate = 17
 set pitch_rc_rate = 17
 set yaw_rc_rate = 17
@@ -195,7 +197,7 @@ set yaw_srate = 50
 rateprofile 2
 
 # rateprofile 2
-set rateprofile_name = @@@@
+set rateprofile_name = SK
 set roll_rc_rate = 18
 set pitch_rc_rate = 18
 set yaw_rc_rate = 20
@@ -209,7 +211,7 @@ set yaw_srate = 38
 rateprofile 3
 
 # rateprofile 3
-set rateprofile_name = LEXA_S
+set rateprofile_name = LS
 set roll_rc_rate = 27
 set pitch_rc_rate = 27
 set yaw_rc_rate = 22
@@ -223,7 +225,7 @@ set yaw_srate = 28
 rateprofile 4
 
 # rateprofile 4
-set rateprofile_name = STN
+set rateprofile_name = ST
 set roll_rc_rate = 12
 set pitch_rc_rate = 12
 set yaw_rc_rate = 12
