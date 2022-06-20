@@ -141,20 +141,20 @@ profile 0
 
 # profile 0
 set vbat_sag_compensation = 100
-set p_pitch = 37
-set i_pitch = 67
-set d_pitch = 36
-set f_pitch = 99
-set p_roll = 35
-set i_roll = 63
-set d_roll = 31
-set f_roll = 95
-set p_yaw = 35
-set i_yaw = 63
-set f_yaw = 95
-set d_min_roll = 23
-set d_min_pitch = 27
-set simplified_master_multiplier = 80
+set p_pitch = 35
+set i_pitch = 63
+set d_pitch = 34
+set f_pitch = 93
+set p_roll = 33
+set i_roll = 60
+set d_roll = 30
+set f_roll = 90
+set p_yaw = 33
+set i_yaw = 60
+set f_yaw = 90
+set d_min_roll = 22
+set d_min_pitch = 25
+set simplified_master_multiplier = 75
 
 profile 1
 
