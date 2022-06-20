@@ -132,6 +132,7 @@ set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
+set vcd_v_offset = -3
 set gyro_1_align_yaw = 2700
 set stats_min_armed_time_s = 30
 set name = S
