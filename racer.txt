@@ -82,6 +82,7 @@ uid 2 0051003a3538510835343631 Y
 uid 3 003b001b3538510e34393631 W
 
 # master
+set gyro_calib_duration = 25
 set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = 25,50,-250,1
@@ -106,6 +107,7 @@ set osd_mah_drawn_pos = 4152
 set osd_craft_name_pos = 8538
 set osd_display_name_pos = 6154
 set osd_altitude_pos = 170
+set osd_debug_pos = 4385
 set osd_warnings_pos = 14601
 set osd_avg_cell_voltage_pos = 14668
 set osd_pit_ang_pos = 56
@@ -123,11 +125,12 @@ set osd_stat_min_link_quality = ON
 set osd_stat_total_flights = ON
 set osd_stat_total_time = ON
 set osd_stat_min_rssi_dbm = ON
+set osd_profile = 2
 set osd_profile_1_name = personal
 set osd_profile_2_name = debug
 set osd_profile_3_name = overpass
 set osd_framerate_hz = 60
-set debug_mode = RC_SMOOTHING_RATE
+set debug_mode = GYRO_CALIB
 set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
