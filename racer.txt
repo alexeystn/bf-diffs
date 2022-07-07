@@ -83,6 +83,7 @@ uid 3 003b001b3538510e34393631 W
 
 # master
 set gyro_calib_duration = 25
+set gyro_calib_noise_limit = 20
 set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = 25,50,-250,1
