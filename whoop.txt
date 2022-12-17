@@ -96,6 +96,7 @@ set osd_craft_name_pos = 14347
 set osd_debug_pos = 8545
 set osd_pit_ang_pos = 8289
 set osd_rol_ang_pos = 8257
+set osd_flip_arrow_pos = 14575
 set osd_log_status_pos = 14426
 set osd_heart_rate_pos = 14721
 set osd_stat_max_spd = OFF
