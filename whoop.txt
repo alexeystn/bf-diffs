@@ -80,7 +80,6 @@ set ibata_scale = 1175
 set yaw_motors_reversed = ON
 set crashflip_motor_percent = 50
 set small_angle = 180
-set level_recovery = ON
 set runaway_takeoff_prevention = OFF
 set ledstrip_profile = RACE
 set osd_warn_batt_warning = OFF
