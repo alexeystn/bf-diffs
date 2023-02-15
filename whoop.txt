@@ -1,8 +1,9 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.3.2-STN Dec  4 2022 / 23:17:14 (c5c99eaa9) MSP API: 1.44
-# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FR, version: 03213dd9, date: 2022-11-13T13:57:08Z
+# Betaflight / STM32F411 (S411) 4.4.0 Feb  1 2023 / 23:42:22 (norevision) MSP API: 1.45
+
+# config: YES
 
 # start the command batch
 batch start
@@ -12,7 +13,7 @@ defaults nosave
 
 board_name CRAZYBEEF4FR
 manufacturer_id HAMO
-mcu_id 0047000e3030510939383634
+mcu_id 002e00204e56500420363955
 signature 
 
 # name: AlexeyStn
@@ -26,7 +27,8 @@ resource SERIAL_RX 2 NONE
 resource PINIO 1 A03
 
 # feature
-feature -RX_PARALLEL_PWM
+feature -RX_SERIAL
+feature -TELEMETRY
 feature -AIRMODE
 feature LED_STRIP
 
@@ -47,21 +49,20 @@ aux 5 26 2 1700 2100 0 0
 aux 6 35 1 1700 2100 0 0
 
 # vtxtable
-vtxtable bands 6
+vtxtable bands 5
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
 vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
 vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665 5645 5885 5905 5925 5945
 vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
-vtxtable powerlevels 1
-vtxtable powerlabels 25
+vtxtable powerlevels 2
+vtxtable powervalues 0 1
+vtxtable powerlabels 25 50
 
 # unique_id
-uid 0 0047000e3030510939383634 B
-uid 1 003f003f4e56500320363955 R
-uid 2 002e00204e56500420363955 Y
+uid 0 0047000e3030510939383634 R
+uid 2 002e00204e56500420363955 B
 
 # master
 set acc_calibration = -10,70,-100,1
@@ -82,7 +83,7 @@ set crashflip_motor_percent = 50
 set small_angle = 180
 set runaway_takeoff_prevention = OFF
 set ledstrip_profile = RACE
-set osd_warn_batt_warning = OFF
+set osd_warn_bitmask = 8187
 set osd_tim2 = 2577
 set osd_vbat_pos = 14731
 set osd_rssi_pos = 33
@@ -97,20 +98,15 @@ set osd_pit_ang_pos = 8289
 set osd_rol_ang_pos = 8257
 set osd_flip_arrow_pos = 14575
 set osd_log_status_pos = 14426
-set osd_heart_rate_pos = 14721
-set osd_stat_max_spd = OFF
-set osd_stat_battery = ON
-set osd_stat_min_rssi = OFF
-set osd_stat_bbox = OFF
-set osd_stat_bb_no = OFF
-set osd_stat_total_flights = ON
+set osd_aux_pos = 14721
+set osd_stat_bitmask = 3145892
 set osd_framerate_hz = 60
-set osd_heart_rate_channel = 9
-set debug_mode = RECOVERY
+set osd_aux_channel = 9
+set osd_aux_symbol = 121
+set osd_canvas_height = 13
 set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
-set vtx_low_power_disarm = ON
 set vtx_freq = 5695
 set vcd_video_system = NTSC
 set frsky_spi_tx_id = 50,121,0
@@ -119,7 +115,8 @@ set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,
 set redpine_high_res = ON
 set gyro_1_align_yaw = 900
 set stats_min_armed_time_s = 45
-set name = AlexeyStn
+set craft_name = AlexeyStn
+set pilot_name = AlexeyStn
 
 profile 0
 
@@ -148,6 +145,8 @@ profile 1
 
 profile 2
 
+profile 3
+
 # restore original profile selection
 profile 0
 
@@ -166,10 +165,6 @@ rateprofile 1
 rateprofile 2
 
 rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
