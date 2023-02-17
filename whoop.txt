@@ -61,8 +61,8 @@ vtxtable powervalues 0 1
 vtxtable powerlabels 25 50
 
 # unique_id
-uid 0 0047000e3030510939383634 R
-uid 2 002e00204e56500420363955 B
+uid 0 002e00204e56500420363955 B
+uid 1 003f003f4e56500320363955 R
 
 # master
 set acc_calibration = -10,70,-100,1
@@ -101,7 +101,7 @@ set osd_log_status_pos = 14426
 set osd_aux_pos = 14721
 set osd_stat_bitmask = 3145892
 set osd_framerate_hz = 60
-set osd_aux_channel = 9
+set osd_aux_channel = 5
 set osd_aux_symbol = 121
 set osd_canvas_height = 13
 set vtx_band = 5
@@ -109,6 +109,7 @@ set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
 set vcd_video_system = NTSC
+set vcd_v_offset = -2
 set frsky_spi_tx_id = 50,121,0
 set frsky_spi_offset = 30
 set frsky_spi_bind_hop_data = 254,39,98,113,157,249,221,54,131,86,124,128,60,10,116,83,167,251,14,240,165,65,70,25,118,29,175,195,16,6,74,137,105,225,228,199,185,153,120,133,170,51,147,95,108,230,223,8,79,0
