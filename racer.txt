@@ -19,6 +19,7 @@ signature
 # name: STN
 
 # feature
+feature TELEMETRY
 feature LED_STRIP
 
 # serial
@@ -85,6 +86,7 @@ set gyro_calib_noise_limit = 20
 set dyn_notch_count = 1
 set dyn_notch_q = 500
 set acc_calibration = 25,50,-250,1
+set serialrx_provider = CRSF
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
 set ibata_scale = 180
@@ -204,6 +206,8 @@ set yaw_expo = 12
 set roll_srate = 45
 set pitch_srate = 45
 set yaw_srate = 53
+
+rateprofile 3
 
 # restore original rateprofile selection
 rateprofile 0
