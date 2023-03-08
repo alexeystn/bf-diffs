@@ -28,7 +28,6 @@ resource PINIO 1 A03
 
 # feature
 feature -RX_SERIAL
-feature -TELEMETRY
 feature -AIRMODE
 feature LED_STRIP
 
@@ -83,6 +82,7 @@ set crashflip_motor_percent = 50
 set small_angle = 180
 set runaway_takeoff_prevention = OFF
 set ledstrip_profile = RACE
+set ledstrip_race_color = POLICE
 set osd_warn_bitmask = 8187
 set osd_tim2 = 2577
 set osd_vbat_pos = 14731
