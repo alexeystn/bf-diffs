@@ -62,6 +62,7 @@ vtxtable powerlabels 25 50
 # unique_id
 uid 0 002e00204e56500420363955 B
 uid 1 003f003f4e56500320363955 R
+uid 2 0047000e3030510939383634 K
 
 # master
 set acc_calibration = -10,70,-100,1
