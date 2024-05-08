@@ -47,8 +47,9 @@ color 13 330,0,180
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 27 0 900 900 0 45
-aux 2 35 1 1700 2100 0 0
-aux 3 45 3 1700 2100 0 0
+aux 2 26 4 1700 2100 0 0
+aux 3 35 1 1700 2100 0 0
+aux 4 45 3 1700 2100 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -76,6 +77,15 @@ rxfail 8 h
 # master
 set dyn_notch_count = 0
 set acc_calibration = 93,88,20,1
+set blackbox_sample_rate = 1/16
+set blackbox_disable_pids = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gyro = ON
+set blackbox_disable_acc = ON
+set blackbox_disable_debug = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_gps = ON
 set align_board_yaw = 270
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
