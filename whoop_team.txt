@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.4.3 Apr 19 2024 / 19:26:34 (738127e7e) MSP API: 1.45
+# Betaflight / STM32F411 (S411) 4.4.3 Nov 16 2023 / 20:52:30 (738127e7e) MSP API: 1.45
 
 # config: YES
 
@@ -16,10 +16,11 @@ manufacturer_id BEFH
 mcu_id 003600413233510d36363836
 signature 
 
-# name: Alexey
+# name: Nonames
 
 # resources
 resource SERIAL_RX 2 NONE
+resource PINIO 1 A03
 
 # feature
 feature -SOFTSERIAL
@@ -28,12 +29,15 @@ feature -SOFTSERIAL
 serial 1 2048 115200 57600 0 115200
 
 # led
-led 0 0,0::C:4
+led 0 0,0::C:2
 
 # aux
 aux 0 0 0 1700 2100 0 0
-aux 1 35 1 1700 2100 0 0
-aux 2 45 3 1700 2100 0 0
+aux 1 26 4 1700 2100 0 0
+aux 2 35 1 1700 2100 0 0
+aux 3 39 2 1700 2100 0 0
+aux 4 39 0 900 900 0 45
+aux 5 45 3 1700 2100 0 0
 
 # adjrange
 adjrange 0 0 5 900 2100 12 5 0 0
@@ -54,6 +58,15 @@ vtxtable powerlabels 25 50
 # master
 set dyn_notch_count = 0
 set acc_calibration = -117,66,68,1
+set blackbox_sample_rate = 1/8
+set blackbox_disable_pids = ON
+set blackbox_disable_setpoint = ON
+set blackbox_disable_bat = ON
+set blackbox_disable_rssi = ON
+set blackbox_disable_gyro = ON
+set blackbox_disable_acc = ON
+set blackbox_disable_motors = ON
+set blackbox_disable_gps = ON
 set align_board_yaw = 270
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 290
@@ -65,19 +78,22 @@ set osd_vbat_pos = 14730
 set osd_tim_2_pos = 14740
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14369
-set osd_craft_name_pos = 14391
+set osd_craft_name_pos = 14390
 set osd_pilot_name_pos = 108
 set osd_flip_arrow_pos = 14542
 set osd_rate_profile_name_pos = 14424
 set osd_stat_bitmask = 133
 set osd_canvas_width = 30
 set osd_canvas_height = 13
+set debug_mode = DSHOT_TELEMETRY_COUNTS
 set vtx_band = 5
-set vtx_channel = 2
+set vtx_channel = 1
 set vtx_power = 1
-set vtx_freq = 5695
+set vtx_freq = 5658
 set vcd_video_system = NTSC
-set craft_name = Alexey
+set pinio_config = 129,1,1,1
+set pinio_box = 39,255,255,255
+set craft_name = Nonames
 
 profile 0
 
