@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 003600413233510d36363836
 signature 
 
-# name: Nonames
+# name: L
 
 # resources
 resource SERIAL_RX 2 NONE
@@ -78,8 +78,8 @@ set osd_vbat_pos = 14730
 set osd_tim_2_pos = 14740
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14369
-set osd_craft_name_pos = 14390
-set osd_pilot_name_pos = 108
+set osd_craft_name_pos = 14397
+set osd_pilot_name_pos = 14389
 set osd_flip_arrow_pos = 14542
 set osd_rate_profile_name_pos = 14424
 set osd_stat_bitmask = 133
@@ -93,7 +93,8 @@ set vtx_freq = 5695
 set vcd_video_system = NTSC
 set pinio_config = 129,1,1,1
 set pinio_box = 39,255,255,255
-set craft_name = Nonames
+set craft_name = L
+set pilot_name = Nonames
 
 profile 0
 
