@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 003600413233510d36363836
 signature 
 
-# name: L
+# name: Rodin_A_29
 
 # resources
 resource SERIAL_RX 2 NONE
@@ -40,7 +40,7 @@ aux 4 39 0 900 900 0 45
 aux 5 45 3 1700 2100 0 0
 
 # adjrange
-adjrange 0 0 5 900 2100 12 5 0 0
+adjrange 1 0 5 900 2100 29 5 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -77,11 +77,12 @@ set osd_tim2 = 2577
 set osd_vbat_pos = 14730
 set osd_tim_2_pos = 14740
 set osd_throttle_pos = 14721
-set osd_vtx_channel_pos = 14369
-set osd_craft_name_pos = 14397
-set osd_pilot_name_pos = 14389
+set osd_vtx_channel_pos = 14401
+set osd_craft_name_pos = 4129
+set osd_pilot_name_pos = 2081
 set osd_flip_arrow_pos = 14542
-set osd_rate_profile_name_pos = 14424
+set osd_rate_profile_name_pos = 14392
+set osd_pid_profile_name_pos = 14389
 set osd_stat_bitmask = 133
 set osd_canvas_width = 30
 set osd_canvas_height = 13
@@ -93,12 +94,13 @@ set vtx_freq = 5695
 set vcd_video_system = NTSC
 set pinio_config = 129,1,1,1
 set pinio_box = 39,255,255,255
-set craft_name = L
-set pilot_name = Nonames
+set craft_name = Rodin_A_29
+set pilot_name = Stankevich_A_44
 
 profile 0
 
 # profile 0
+set profile_name = C
 set vbat_sag_compensation = 100
 set crash_recovery = ON
 
