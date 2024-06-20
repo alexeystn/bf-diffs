@@ -16,7 +16,7 @@ manufacturer_id BEFH
 mcu_id 003500283931501420363458
 signature 
 
-# name: HD-R
+# name: C
 
 # feature
 feature -SOFTSERIAL
@@ -106,8 +106,8 @@ set osd_throttle_pos = 2610
 set osd_vtx_channel_pos = 2599
 set osd_current_pos = 1514
 set osd_mah_drawn_pos = 1484
-set osd_craft_name_pos = 2078
-set osd_pilot_name_pos = 2068
+set osd_craft_name_pos = 3083
+set osd_pilot_name_pos = 2055
 set osd_warnings_pos = 14803
 set osd_avg_cell_voltage_pos = 2618
 set osd_rtc_date_time_pos = 62
@@ -129,8 +129,8 @@ set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
 set vcd_video_system = HD
-set craft_name = HD-B
-set pilot_name = AlexeyStn
+set craft_name = C
+set pilot_name = Stankevich_A_44
 
 profile 0
 
