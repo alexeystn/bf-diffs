@@ -71,8 +71,6 @@ vtx 2 2 0 0 3 1800 2100
 
 # rxfail
 rxfail 6 s 2000
-rxfail 7 h
-rxfail 8 h
 
 # master
 set dyn_notch_count = 0
