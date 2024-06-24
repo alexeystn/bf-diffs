@@ -1,9 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.4.3 Nov 14 2023 / 17:22:54 (738127e7e) MSP API: 1.45
-
-# config: YES
+# Betaflight / STM32F411 (S411) 4.5.0-STN Jun 24 2024 / 22:14:41 (f826531fe) MSP API: 1.46
+# config rev: 140b82d
 
 # start the command batch
 batch start
@@ -16,15 +15,13 @@ manufacturer_id BEFH
 mcu_id 003500283931501420363458
 signature 
 
-# name: C
+# name: AlexeyStn
 
 # feature
-feature -SOFTSERIAL
 feature -AIRMODE
+feature TELEMETRY
 feature LED_STRIP
-
-# serial
-serial 1 131073 115200 57600 0 115200
+feature OSD
 
 # led
 led 0 0,0::C:4
@@ -69,28 +66,33 @@ vtx 0 2 0 0 1 900 1200
 vtx 1 2 0 0 2 1300 1700
 vtx 2 2 0 0 3 1800 2100
 
+# unique_id
+uid 0 0055002f3931500120363458 W 
+uid 1 003500283931501420363458 C
+uid 2 006600343233510c36363836 B 
+
 # rxfail
 rxfail 6 s 2000
 
 # master
-set dyn_notch_count = 0
 set acc_calibration = 93,88,20,1
-set blackbox_sample_rate = 1/16
+set blackbox_sample_rate = 1/8
 set blackbox_disable_pids = ON
+set blackbox_disable_setpoint = ON
 set blackbox_disable_bat = ON
 set blackbox_disable_rssi = ON
 set blackbox_disable_gyro = ON
+set blackbox_disable_gyrounfilt = ON
 set blackbox_disable_acc = ON
-set blackbox_disable_debug = ON
 set blackbox_disable_motors = ON
-set blackbox_disable_gps = ON
+set blackbox_disable_rpm = ON
 set align_board_yaw = 270
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
 set yaw_motors_reversed = ON
 set small_angle = 180
-set osd_warn_bitmask = 8187
+set osd_warn_bitmask = 24571
 set osd_tim1 = 2576
 set osd_tim2 = 2577
 set osd_vbat_pos = 537
@@ -99,15 +101,16 @@ set osd_link_quality_pos = 451
 set osd_rssi_dbm_pos = 291
 set osd_rsnr_pos = 259
 set osd_tim_1_pos = 1568
-set osd_tim_2_pos = 3619
-set osd_throttle_pos = 2610
-set osd_vtx_channel_pos = 2599
+set osd_tim_2_pos = 15907
+set osd_throttle_pos = 14898
+set osd_vtx_channel_pos = 14887
 set osd_current_pos = 1514
 set osd_mah_drawn_pos = 1484
-set osd_craft_name_pos = 3083
+set osd_craft_name_pos = 12295
 set osd_pilot_name_pos = 2055
+set osd_debug_pos = 8684
 set osd_warnings_pos = 14803
-set osd_avg_cell_voltage_pos = 2618
+set osd_avg_cell_voltage_pos = 14906
 set osd_rtc_date_time_pos = 62
 set osd_flip_arrow_pos = 216
 set osd_core_temp_pos = 98
@@ -118,16 +121,16 @@ set osd_sys_goggle_dvr_pos = 1126
 set osd_sys_warnings_pos = 79
 set osd_sys_vtx_temp_pos = 130
 set osd_stat_bitmask = 133
-set osd_displayport_device = MSP
+set osd_profile = 2
 set osd_framerate_hz = 30
 set osd_canvas_width = 50
 set osd_canvas_height = 18
+set debug_mode = STN
 set vtx_band = 5
 set vtx_channel = 2
 set vtx_power = 1
 set vtx_freq = 5695
-set vcd_video_system = HD
-set craft_name = C
+set craft_name = AlexeyStn
 set pilot_name = Stankevich_A_44
 
 profile 0
