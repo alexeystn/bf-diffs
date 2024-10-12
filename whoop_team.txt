@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.0-STN Jun 24 2024 / 22:14:41 (f826531fe) MSP API: 1.46
-# config rev: 140b82d
+# Betaflight / STM32F411 (S411) 4.5.1-STN Oct 13 2024 / 00:59:55 (2e7920004) MSP API: 1.46
+# config rev: 2129333
 
 # start the command batch
 batch start
@@ -24,14 +24,10 @@ resource PINIO 1 A03
 # feature
 feature -AIRMODE
 feature TELEMETRY
-feature LED_STRIP
 feature OSD
 
 # serial
 serial 1 2048 115200 57600 0 115200
-
-# led
-led 0 0,0::C:2
 
 # aux
 aux 0 0 0 1700 2100 0 0
@@ -82,12 +78,14 @@ set small_angle = 180
 set osd_warn_bitmask = 8187
 set osd_tim2 = 2577
 set osd_vbat_pos = 14730
+set osd_link_quality_pos = 8280
+set osd_rssi_dbm_pos = 8312
 set osd_tim_2_pos = 14740
 set osd_throttle_pos = 14721
 set osd_vtx_channel_pos = 14401
 set osd_craft_name_pos = 4129
-set osd_pilot_name_pos = 2081
-set osd_debug_pos = 14690
+set osd_pilot_name_pos = 10273
+set osd_debug_pos = 8546
 set osd_warnings_pos = 14634
 set osd_flip_arrow_pos = 14542
 set osd_rate_profile_name_pos = 14392
