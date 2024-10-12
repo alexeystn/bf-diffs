@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.0-STN Jun 24 2024 / 22:14:41 (f826531fe) MSP API: 1.46
-# config rev: 140b82d
+# Betaflight / STM32F411 (S411) 4.5.1 Jul 29 2024 / 19:23:52 (77d01ba3b) MSP API: 1.46
+# config rev: bc5da0e
 
 # start the command batch
 batch start
@@ -20,26 +20,7 @@ signature
 # feature
 feature -AIRMODE
 feature TELEMETRY
-feature LED_STRIP
 feature OSD
-
-# led
-led 0 0,0::C:4
-
-# color
-color 1 30,100,120
-color 2 0,0,240
-color 3 10,0,220
-color 4 30,0,180
-color 5 90,0,180
-color 6 120,0,240
-color 7 150,0,180
-color 8 180,0,120
-color 9 210,0,180
-color 10 240,0,240
-color 11 270,0,180
-color 12 300,0,120
-color 13 330,0,180
 
 # aux
 aux 0 0 0 1700 2100 0 0
@@ -63,8 +44,7 @@ vtxtable powerlabels 25 200 0
 
 # vtx
 vtx 0 2 0 0 1 900 1200
-vtx 1 2 0 0 2 1300 1700
-vtx 2 2 0 0 3 1800 2100
+vtx 1 2 0 0 3 1800 2100
 
 # unique_id
 uid 0 0055002f3931500120363458 W 
@@ -75,6 +55,7 @@ uid 2 006600343233510c36363836 B
 rxfail 6 s 2000
 
 # master
+set acc_hardware = NONE
 set acc_calibration = 93,88,20,1
 set blackbox_sample_rate = 1/8
 set blackbox_disable_pids = ON
@@ -86,6 +67,7 @@ set blackbox_disable_gyrounfilt = ON
 set blackbox_disable_acc = ON
 set blackbox_disable_motors = ON
 set blackbox_disable_rpm = ON
+set dshot_bitbang = ON
 set align_board_yaw = 270
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
@@ -97,8 +79,8 @@ set osd_tim1 = 2576
 set osd_tim2 = 2577
 set osd_vbat_pos = 537
 set osd_rssi_pos = 323
-set osd_link_quality_pos = 5127
-set osd_rssi_dbm_pos = 5120
+set osd_link_quality_pos = 13319
+set osd_rssi_dbm_pos = 13312
 set osd_rsnr_pos = 259
 set osd_tim_1_pos = 1568
 set osd_tim_2_pos = 15907
@@ -125,11 +107,10 @@ set osd_profile = 2
 set osd_framerate_hz = 30
 set osd_canvas_width = 50
 set osd_canvas_height = 18
-set debug_mode = STN
 set vtx_band = 5
-set vtx_channel = 2
+set vtx_channel = 8
 set vtx_power = 1
-set vtx_freq = 5695
+set vtx_freq = 5917
 set craft_name = AlexeyStn
 set pilot_name = Stankevich_A_44
 
