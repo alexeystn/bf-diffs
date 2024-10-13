@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.1-STN Oct 13 2024 / 00:24:58 (2e7920004) MSP API: 1.46
+# Betaflight / STM32F411 (S411) 4.5.1-STN Oct 13 2024 / 00:59:55 (2e7920004) MSP API: 1.46
 # config rev: 2129333
 
 # start the command batch
@@ -47,9 +47,9 @@ vtx 0 2 0 0 1 900 1200
 vtx 1 2 0 0 3 1800 2100
 
 # unique_id
-uid 0 0055002f3931500120363458 W 
+uid 0 0055002f3931500120363458 W
 uid 1 003500283931501420363458 C
-uid 2 006600343233510c36363836 B 
+uid 2 006600343233510c36363836 B
 
 # rxfail
 rxfail 6 s 2000
