@@ -74,13 +74,13 @@ set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
 set yaw_motors_reversed = ON
 set small_angle = 180
-set osd_warn_bitmask = 24571
+set osd_warn_bitmask = 8187
 set osd_tim1 = 2576
 set osd_tim2 = 2577
 set osd_vbat_pos = 537
 set osd_rssi_pos = 323
-set osd_link_quality_pos = 13319
-set osd_rssi_dbm_pos = 13312
+set osd_link_quality_pos = 15367
+set osd_rssi_dbm_pos = 15360
 set osd_rsnr_pos = 259
 set osd_tim_1_pos = 1568
 set osd_tim_2_pos = 15907
@@ -112,7 +112,7 @@ set vtx_channel = 8
 set vtx_power = 1
 set vtx_freq = 5917
 set craft_name = AlexeyStn
-set pilot_name = Stankevich_A_44
+set pilot_name = Stankevich_A_39
 
 profile 0
 
