@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.1-STN Nov  3 2024 / 11:48:00 (2e7920004) MSP API: 1.46
+# Betaflight / STM32F411 (S411) 4.5.1-STN Nov  3 2024 / 12:55:54 (0fe75f4b9) MSP API: 1.46
 # config rev: 2129333
 
 # start the command batch
