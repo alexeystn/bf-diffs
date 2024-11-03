@@ -37,6 +37,21 @@ feature OSD
 # led
 led 0 0,0::C:8
 
+# color
+color 1 30,100,120
+color 2 0,0,240
+color 3 10,0,220
+color 4 30,0,180
+color 5 90,0,180
+color 6 120,0,240
+color 7 150,0,180
+color 8 180,0,120
+color 9 210,0,180
+color 10 240,0,240
+color 11 270,0,180
+color 12 300,0,120
+color 13 330,0,180
+
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 27 0 900 900 0 45
@@ -118,7 +133,6 @@ set osd_sys_goggle_dvr_pos = 1126
 set osd_sys_warnings_pos = 79
 set osd_sys_vtx_temp_pos = 130
 set osd_stat_bitmask = 133
-set osd_profile = 2
 set osd_framerate_hz = 30
 set osd_canvas_width = 50
 set osd_canvas_height = 18
