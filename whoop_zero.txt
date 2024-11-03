@@ -17,10 +17,25 @@ signature
 
 # name: AlexeyStn
 
+# resources
+resource LED_STRIP 1 A15
+
+# timer
+timer A15 AF1
+# pin A15: TIM2 CH1 (AF1)
+
+# dma
+dma pin A15 0
+# pin A15: DMA1 Stream 5 Channel 3
+
 # feature
 feature -AIRMODE
 feature TELEMETRY
+feature LED_STRIP
 feature OSD
+
+# led
+led 0 0,0::C:8
 
 # aux
 aux 0 0 0 1700 2100 0 0
