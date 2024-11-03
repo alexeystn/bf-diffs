@@ -1,7 +1,7 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.1-STN Oct 13 2024 / 00:59:55 (2e7920004) MSP API: 1.46
+# Betaflight / STM32F411 (S411) 4.5.1-STN Nov  3 2024 / 12:55:54 (0fe75f4b9) MSP API: 1.46
 # config rev: 2129333
 
 # start the command batch
@@ -15,19 +15,47 @@ manufacturer_id BEFH
 mcu_id 003600413233510d36363836
 signature 
 
-# name: Stankevich_A
+# name: Stankevich_A_40
 
 # resources
+resource LED_STRIP 1 A15
 resource SERIAL_RX 2 NONE
 resource PINIO 1 A03
+
+# timer
+timer A15 AF1
+# pin A15: TIM2 CH1 (AF1)
+
+# dma
+dma pin A15 0
+# pin A15: DMA1 Stream 5 Channel 3
 
 # feature
 feature -AIRMODE
 feature TELEMETRY
+feature LED_STRIP
 feature OSD
 
 # serial
 serial 1 2048 115200 57600 0 115200
+
+# led
+led 0 0,0::C:2
+
+# color
+color 1 30,100,120
+color 2 0,0,240
+color 3 10,0,220
+color 4 30,0,180
+color 5 90,0,180
+color 6 120,0,240
+color 7 150,0,180
+color 8 180,0,120
+color 9 210,0,180
+color 10 240,0,240
+color 11 270,0,180
+color 12 300,0,120
+color 13 330,0,180
 
 # aux
 aux 0 0 0 1700 2100 0 0
@@ -66,6 +94,7 @@ set blackbox_disable_gyrounfilt = ON
 set blackbox_disable_acc = ON
 set blackbox_disable_motors = ON
 set blackbox_disable_rpm = ON
+set dshot_bitbang = ON
 set align_board_yaw = 270
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 290
@@ -97,8 +126,8 @@ set vtx_freq = 5917
 set vcd_video_system = NTSC
 set pinio_config = 129,1,1,1
 set pinio_box = 39,255,255,255
-set craft_name = Stankevich_A
-set pilot_name = Rodin_A
+set craft_name = Stankevich_A_40
+set pilot_name = Rodin_A_20
 
 profile 0
 
