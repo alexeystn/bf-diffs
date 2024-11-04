@@ -141,7 +141,7 @@ set vtx_channel = 8
 set vtx_power = 1
 set vtx_freq = 5917
 set craft_name = AlexeyStn
-set pilot_name = Stankevich_A_39
+set pilot_name = Stankevich_A_31
 
 profile 0
 

@@ -15,7 +15,7 @@ manufacturer_id BEFH
 mcu_id 003600413233510d36363836
 signature 
 
-# name: Stankevich_A_40
+# name: Stankevich_A_31
 
 # resources
 resource LED_STRIP 1 A15
@@ -126,7 +126,7 @@ set vtx_freq = 5917
 set vcd_video_system = NTSC
 set pinio_config = 129,1,1,1
 set pinio_box = 39,255,255,255
-set craft_name = Stankevich_A_40
+set craft_name = Stankevich_A_31
 set pilot_name = Rodin_A_20
 
 profile 0
