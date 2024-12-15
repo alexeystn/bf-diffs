@@ -126,14 +126,18 @@ set osd_avg_cell_voltage_pos = 14906
 set osd_rtc_date_time_pos = 62
 set osd_flip_arrow_pos = 216
 set osd_core_temp_pos = 98
-set osd_aux_pos = 515
+set osd_pid_profile_name_pos = 14375
+set osd_aux_pos = 14380
 set osd_sys_goggle_voltage_pos = 1194
 set osd_sys_lq_pos = 1164
 set osd_sys_goggle_dvr_pos = 1126
 set osd_sys_warnings_pos = 79
 set osd_sys_vtx_temp_pos = 130
 set osd_stat_bitmask = 133
+set osd_profile = 2
 set osd_framerate_hz = 30
+set osd_aux_channel = 7
+set osd_aux_symbol = 58
 set osd_canvas_width = 50
 set osd_canvas_height = 18
 set vtx_band = 5
@@ -146,6 +150,7 @@ set pilot_name = Stankevich_A_31
 profile 0
 
 # profile 0
+set profile_name = pulse
 set vbat_sag_compensation = 100
 
 profile 1
