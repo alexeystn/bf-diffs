@@ -140,7 +140,6 @@ profile 0
 
 # profile 0
 set vbat_sag_compensation = 100
-set crash_recovery = ON
 
 profile 1
 
