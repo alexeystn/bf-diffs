@@ -12,7 +12,7 @@ defaults nosave
 
 board_name CRAZYBEEF4SX1280
 manufacturer_id HAMO
-mcu_id 0035002f3533511037393932
+mcu_id 005000664731500320313348
 signature 
 
 # name: AlexeyStn 7
@@ -50,20 +50,23 @@ vtx 0 2 0 0 1 900 1200
 vtx 1 2 0 0 3 1800 2100
 
 # unique_id
-uid 0 0035002f3533511037393932 K
+uid 0 007200303533511037393932 C 
+uid 1 005000664731500320313348 G 
 
 # rxfail
 rxfail 6 s 2000
 
 # master
 set acc_hardware = NONE
+set dshot_idle_value = 650
+set dshot_bidir = ON
+set motor_poles = 12
 set motor_output_reordering = 1,3,0,2,4,5,6,7
 set align_board_roll = 180
 set align_board_yaw = 45
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
-set yaw_motors_reversed = ON
 set pid_process_denom = 2
 set runaway_takeoff_prevention = OFF
 set osd_warn_bitmask = 8187
