@@ -1,8 +1,8 @@
 # diff all
 
 # version
-# Betaflight / STM32F411 (S411) 4.5.1-STN Nov  3 2024 / 12:55:54 (0fe75f4b9) MSP API: 1.46
-# config rev: 2129333
+# Betaflight / STM32F411 (S411) 4.5.1-STN Apr  6 2025 / 17:32:08 (0fe75f4b9) MSP API: 1.46
+# config rev: 337bf96
 
 # start the command batch
 batch start
@@ -103,7 +103,6 @@ set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
 set yaw_motors_reversed = ON
-set small_angle = 180
 set osd_warn_bitmask = 8187
 set osd_tim1 = 2576
 set osd_tim2 = 2577
@@ -133,7 +132,7 @@ set osd_sys_lq_pos = 1164
 set osd_sys_goggle_dvr_pos = 1126
 set osd_sys_warnings_pos = 79
 set osd_sys_vtx_temp_pos = 130
-set osd_stat_bitmask = 133
+set osd_stat_bitmask = 805306501
 set osd_profile = 2
 set osd_framerate_hz = 30
 set osd_aux_channel = 7
@@ -173,6 +172,7 @@ set pitch_expo = 50
 set roll_srate = 50
 set pitch_srate = 50
 set yaw_srate = 60
+set throttle_limit_percent = 90
 
 rateprofile 1
 
