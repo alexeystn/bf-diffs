@@ -88,14 +88,9 @@ rxfail 6 s 2000
 set acc_hardware = NONE
 set acc_calibration = 93,88,20,1
 set blackbox_sample_rate = 1/8
-set blackbox_disable_pids = ON
-set blackbox_disable_setpoint = ON
 set blackbox_disable_bat = ON
 set blackbox_disable_rssi = ON
-set blackbox_disable_gyro = ON
-set blackbox_disable_gyrounfilt = ON
 set blackbox_disable_acc = ON
-set blackbox_disable_motors = ON
 set blackbox_disable_rpm = ON
 set dshot_bitbang = ON
 set align_board_yaw = 270
@@ -172,7 +167,6 @@ set pitch_expo = 50
 set roll_srate = 50
 set pitch_srate = 50
 set yaw_srate = 60
-set throttle_limit_percent = 90
 
 rateprofile 1
 
