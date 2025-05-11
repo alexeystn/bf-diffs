@@ -67,7 +67,6 @@ set align_board_yaw = 45
 set vbat_max_cell_voltage = 440
 set vbat_min_cell_voltage = 300
 set vbat_warning_cell_voltage = 330
-set crashflip_motor_percent = 30
 set pid_process_denom = 2
 set runaway_takeoff_prevention = OFF
 set osd_warn_bitmask = 8187
