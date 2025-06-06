@@ -12,10 +12,10 @@ defaults nosave
 
 board_name CRAZYBEEF4SX1280
 manufacturer_id HAMO
-mcu_id 005000664731500320313348
+mcu_id 001c0042333150152030374c
 signature 
 
-# name: AlexeyStn 7
+# name: AlexeyStn
 
 # feature
 feature -AIRMODE
@@ -31,6 +31,10 @@ aux 1 27 0 900 900 0 45
 aux 2 26 4 1700 2100 0 0
 aux 3 35 1 1700 2100 0 0
 aux 4 45 3 1700 2100 0 0
+
+# adjrange
+adjrange 0 0 5 900 1200 12 5 0 0
+adjrange 1 0 5 1800 2100 12 5 0 0
 
 # vtxtable
 vtxtable bands 6
@@ -50,7 +54,7 @@ vtx 0 2 0 0 1 900 1200
 vtx 1 2 0 0 3 1800 2100
 
 # unique_id
-uid 0 007200303533511037393932 C
+uid 0 001c0042333150152030374c C
 uid 1 005000664731500320313348 G
 uid 2 0045005e333150152030374c W
 
@@ -93,6 +97,7 @@ set osd_avg_cell_voltage_pos = 14906
 set osd_rtc_date_time_pos = 62
 set osd_flip_arrow_pos = 216
 set osd_core_temp_pos = 98
+set osd_rate_profile_name_pos = 2087
 set osd_pid_profile_name_pos = 8231
 set osd_aux_pos = 8236
 set osd_sys_goggle_voltage_pos = 1194
@@ -112,8 +117,8 @@ set vtx_power = 1
 set vtx_freq = 5917
 set expresslrs_uid = 52,171,189,175,136,197
 set expresslrs_rate_index = 1
-set craft_name = AlexeyStn 7
-set pilot_name = AlexeyStn 7
+set craft_name = AlexeyStn
+set pilot_name = AlexeyStn
 
 profile 0
 
